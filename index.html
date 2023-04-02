@@ -1,53 +1,73 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Recepty (standardní verze)</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Recepty (standardní verze)</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Source+Sans+Pro&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- největší hlavní recept -->
+      <section id="salads" class="salads">
+        <div class="menu">
+          <div class="category">Saláty</div>
+          <div class="comments">5 komentářů</div>
+        </div>
 
-	<!-- největší hlavní recept -->
-	Saláty
-	5 komentářů
+        <h1 class="salads__title">Salát s&nbsp;vlašskými ořechy</h1>
+      </section>
 
-	Salát s&nbsp;vlašskými ořechy
+      <section id="small-recipes" class="small-recipes">
+        <!-- malý recept 1 -->
 
+        <div class="small-recipe snack">
+          <div class="menu">
+            <div class="category">Svačina</div>
+            <div class="comments">16 komentářů</div>
+          </div>
+          <h2 class="small-recipe__title">Chlebíček s&nbsp;avokádem</h2>
+        </div>
+        <!-- malý recept 2 -->
+        <div class="small-recipe tacos">
+          <div class="menu">
+            <div class="category">Mexická</div>
+            <div class="comments">7 komentářů</div>
+          </div>
+          <h2 class="small-recipe__title">Avokádové tacos</h2>
+        </div>
 
-	<!-- malý recept 1 -->
-	Svačina
-	16 komentářů
+        <!-- malý recept 3 -->
+        <div class="small-recipe pita">
+          <div class="menu">
+            <div class="category">Luštěniny</div>
+            <div class="comments">23 komentářů</div>
+          </div>
+          <h2 class="small-recipe__title">Pita chléb s&nbsp;cizrnou</h2>
+        </div>
 
-	Chlebíček s&nbsp;avokádem
-
-
-	<!-- malý recept 2 -->
-	Mexická
-	7 komentářů
-
-	Avokádové tacos
-
-
-	<!-- malý recept 3 -->
-	Luštěniny
-	23 komentářů
-
-	Pita chléb s&nbsp;cizrnou
-
-
-	<!-- malý recept 4 -->
-	Burgery
-	19 komentářů
-
-	Sojový burger
-
-
-
-	<footer class="paticka">
-		<p>Foto z <a href="https://unsplash.com">unsplash.com</a> (licence <a href="https://unsplash.com/license">do-whatever-you-want</a>)</p>
-	</footer>
-
-</body>
+        <!-- malý recept 4 -->
+        <div class="small-recipe burger">
+          <div class="menu">
+            <div class="category">Burgery</div>
+            <div class="comments">19 komentářů</div>
+          </div>
+          <h2 class="small-recipe__title">Sojový burger</h2>
+        </div>
+      </section>
+      <!-- <footer class="paticka">
+      <p>
+        Foto z <a href="https://unsplash.com">unsplash.com</a> (licence
+        <a href="https://unsplash.com/license">do-whatever-you-want</a>)
+      </p>
+    </footer> -->
+    </div>
+  </body>
 </html>

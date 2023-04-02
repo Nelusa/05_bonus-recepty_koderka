@@ -1,21 +1,33 @@
 /* nejsme vcerejsi, pouzivame moderni box model */
-html { box-sizing: border-box; }
-*, :after, :before { box-sizing: inherit; }
-
-body {
-	margin: 0;
-	font-family: 'Source Sans Pro', sans-serif;
+html {
+  box-sizing: border-box;
+}
+*,
+:after,
+:before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
 }
 
-.paticka {
-	text-align: center;
-	font-size: 14px;
-	color: silver;
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #fff;
+  font-weight: 400;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+
+  height: 100%;
+}
+
+/* .paticka {
+  text-align: center;
+  font-size: 14px;
+  color: silver;
 }
 
 .paticka a {
-	color: silver;
-}
+  color: silver;
+} */
 
 /* -------------------------------------------------- */
 
@@ -33,3 +45,127 @@ Nastav je receptům jako obrázky na pozadí (tj. nepřidávej je jako <img> do 
 Na rozložení prvků NEPOUŽÍVEJ absolutní pozicování, ale pouze flexboxy.
 Flexboxy mohou být vnořené do sebe, klidně několikrát.
 */
+
+h1,
+h2 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+}
+
+h1 {
+  margin-top: 100px;
+  font-size: 28px;
+}
+
+h2 {
+  margin-top: 50px;
+  font-size: 18px;
+}
+
+.salads,
+.small-recipe {
+  padding: 20px;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.salads,
+.snack,
+.tacos,
+.pita,
+.burger {
+  background-color: rgb(148, 146, 146);
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+}
+
+.salads {
+  background-image: url('./images/salat.jpg');
+  border-bottom: 1px solid #fff;
+}
+
+.snack {
+  background-image: url('./images/chlebicek.jpg');
+  border-bottom: 1px solid #fff;
+}
+
+.tacos {
+  background-image: url('./images/tacos.jpg');
+  border-bottom: 1px solid #fff;
+}
+
+.pita {
+  background-image: url('./images/cizrna.jpg');
+  border-bottom: 1px solid #fff;
+}
+
+.burger {
+  background-image: url('./images/burger.jpg');
+}
+
+@media screen and (min-width: 480px) {
+  h1 {
+    margin-top: 300px;
+    font-size: 36px;
+  }
+
+  h2 {
+    margin-top: 150px;
+    font-size: 22px;
+  }
+
+  .menu {
+    font-size: 16px;
+  }
+
+  .salads,
+  .small-recipe {
+    padding: 1.7em 1.5em;
+  }
+
+  .small-recipes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1px;
+  }
+
+  .small-recipe {
+    flex: 1 1 45%;
+    /* height: min-content; */
+    border-bottom: none;
+  }
+}
+
+@media screen and (min-width: 860px) {
+  .container {
+    display: flex;
+    gap: 1px;
+  }
+
+  h1 {
+    margin-top: 600px;
+    font-size: 52px;
+  }
+
+  h2 {
+    margin-top: 250px;
+    font-size: 28px;
+  }
+
+  .menu {
+    font-size: 20px;
+  }
+  .salads {
+    border-bottom: none;
+  }
+
+  .salads,
+  .small-recipe {
+    padding: 30px 40px;
+  }
+}
